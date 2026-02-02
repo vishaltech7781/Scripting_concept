@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Student Details</h2>
+<div id="output"></div>
+
+<script>
+    class Student {
+
+        // method to accept student details
+        accept() {
+            this.name = prompt("Enter Student Name:");
+            this.rollNo = prompt("Enter Roll Number:");
+            this.branch = prompt("Enter Branch:");
+            this.marks = prompt("Enter Marks:");
+        }
+
+        // method to display student details
+        display() {
+            document.getElementById("output").innerHTML =
+                "Student Name: " + this.name + "<br>" +
+                "Roll Number: " + this.rollNo + "<br>" +
+                "Branch: " + this.branch + "<br>" +
+                "Marks: " + this.marks;
+        }
+    }
+
+    // create object
+    var s1 = new Student();
+
+    // method calls
+    s1.accept();
+    s1.display();
+</script>
+
+</body>
+</html>

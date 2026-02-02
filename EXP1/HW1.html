@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Area of Rectangle</h2>
+<div id="output"></div>
+
+<script>
+    class Rectangle {
+
+        getInput() {
+            this.length = parseFloat(prompt("Enter length of rectangle:"));
+            this.breadth = parseFloat(prompt("Enter breadth of rectangle:"));
+        }
+
+        calculateArea() {
+            this.area = this.length * this.breadth;
+        }
+        display() {
+            document.getElementById("output").innerHTML =
+                "Length: " + this.length + "<br>" +
+                "Breadth: " + this.breadth + "<br>" +
+                "Area of Rectangle: " + this.area;
+        }
+    }
+
+    var rect = new Rectangle();
+
+    rect.getInput();
+    rect.calculateArea();
+    rect.display();
+</script>
+
+</body>
+</html>

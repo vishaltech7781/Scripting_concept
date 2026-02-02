@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    function sortDesc(a, b, c) {
+
+        // swap a and b if needed
+        if (a < b) {
+            a = a + b;
+            b = a - b;
+            a = a - b;
+        }
+
+        // swap b and c if needed
+        if (b < c) {
+            b = b + c;
+            c = b - c;
+            b = b - c;
+        }
+
+        // swap a and b again if needed
+        if (a < b) {
+            a = a + b;
+            b = a - b;
+            a = a - b;
+        }
+
+        document.write("Descending order: " + a + ", " + b + ", " + c);
+    }
+
+    sortDesc(12, 5, 20);
+</script>
+
+</body>
+</html>

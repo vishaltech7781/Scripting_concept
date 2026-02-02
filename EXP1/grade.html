@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const marks = parseInt(prompt("enter the marks:"));
+
+        //simple if
+
+        // if(marks>35){
+        //     document.write("you are passed in the exam");
+        // }
+
+        //if-else
+        // if(marks>35){
+        //     document.write("you are passed in the exam.");
+        //  }
+        //  else{
+        //     document.write("you r failed in the exam.");
+        // }
+
+        //else-if ladder
+        if (marks > 90) {
+            document.write("You are passed<br>");
+            document.write("You got O grade");
+        }
+        else if (marks >= 80 && marks <= 90) {
+            document.write("You are passed<br>");
+            document.write("You got A grade");
+        }
+        else if (marks >= 70 && marks < 80) {
+            document.write("You are passed<br>");
+            document.write("You got B grade");
+        }
+        else if (marks >= 60 && marks < 70) {
+            document.write("You are passed<br>");
+            document.write("You got C grade");
+        }
+        else if (marks >= 35 && marks < 60) {
+            document.write("You are passed<br>");
+            document.write("You got D grade");
+        }
+        else {
+            document.write("You are failed");
+        }
+
+    </script>
+</body>
+</html>

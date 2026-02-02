@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    function pyramid(n) {
+        for (var i = 1; i <= n; i++) {
+
+            // spaces
+            for (var s = n; s > i; s--) {
+                document.write("&nbsp;");
+            }
+
+            // stars
+            for (var j = 1; j <= i; j++) {
+                document.write("* ");
+            }
+
+            document.write("<br>");
+        }
+    }
+
+    var levels = parseInt(prompt("Enter number of levels:"));
+    pyramid(levels);
+</script>
+
+</body>
+</html>

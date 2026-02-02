@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    var choice;
+
+    do {
+        choice = parseInt(prompt(
+            "Choose option:\n" +
+            "1. Area of Circle\n" +
+            "2. Area of Rectangle\n" +
+            "3. Exit"
+        ));
+
+        switch (choice) {
+            case 1:
+                var r = parseFloat(prompt("Enter radius:"));
+                document.write("Area of Circle = " + (3.14 * r * r) + "<br>");
+                break;
+
+            case 2:
+                var l = parseFloat(prompt("Enter length:"));
+                var b = parseFloat(prompt("Enter breadth:"));
+                document.write("Area of Rectangle = " + (l * b) + "<br>");
+                break;
+
+            case 3:
+                document.write("Exited successfully<br>");
+                break;
+
+            default:
+                document.write("Invalid choice<br>");
+        }
+
+    } while (choice !== 3);
+</script>
+
+</body>
+</html>

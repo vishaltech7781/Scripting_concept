@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    function findMinMaxMedian(a, b, c) {
+
+        var min, max, median;
+
+        // Find maximum
+        if (a >= b && a >= c)
+            max = a;
+        else if (b >= a && b >= c)
+            max = b;
+        else
+            max = c;
+
+        // Find minimum
+        if (a <= b && a <= c)
+            min = a;
+        else if (b <= a && b <= c)
+            min = b;
+        else
+            min = c;
+
+        // Find median
+        if ((a > min && a < max) || (a < min && a > max))
+            median = a;
+        else if ((b > min && b < max) || (b < min && b > max))
+            median = b;
+        else
+            median = c;
+
+        document.write("Minimum = " + min + "<br>");
+        document.write("Maximum = " + max + "<br>");
+        document.write("Median = " + median);
+    }
+
+    findMinMaxMedian(15, 8, 12);
+</script>
+
+</body>
+</html>

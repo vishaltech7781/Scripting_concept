@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    var arr1 = ["Apple", "Banana", "Mango"];
+
+    document.write("Original Array: " + arr1 + "<br><br>");
+
+    // push() – add element at end
+    arr1.push("Orange");
+    document.write("After push(): " + arr1 + "<br>");
+
+    // pop() – remove last element
+    arr1.pop();
+    document.write("After pop(): " + arr1 + "<br>");
+
+    // unshift() – add element at beginning
+    arr1.unshift("Grapes");
+    document.write("After unshift(): " + arr1 + "<br>");
+
+    // shift() – remove first element
+    arr1.shift();
+    document.write("After shift(): " + arr1 + "<br><br>");
+
+    // length – size of array
+    document.write("Length of array: " + arr1.length + "<br>");
+
+    // indexOf() – position of element
+    document.write("Index of Banana: " + arr1.indexOf("Banana") + "<br><br>");
+
+    // concat() – merge arrays
+    var arr2 = ["Pineapple", "Papaya"];
+    var arr3 = arr1.concat(arr2);
+    document.write("After concat(): " + arr3 + "<br>");
+
+    // join() – convert array to string
+    document.write("After join(): " + arr3.join(" | ") + "<br><br>");
+
+    // forEach() – traverse array
+    document.write("Using forEach():<br>");
+    arr3.forEach(function(item) {
+        document.write(item + "<br>");
+    });
+</script>
+
+</body>
+</html>
