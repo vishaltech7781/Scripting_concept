@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Type something and then try closing the page</h3>
+
+<input type="text" placeholder="Type here">
+
+<script>
+    window.onbeforeunload = function () {
+        return true;
+    };
+</script>
+
+</body>
+</html>

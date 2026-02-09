@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter the name :</label>
+    <input type = "text" onfocus ="showmsg()">
+
+    <p id="msg"></p>
+    <script>
+        function showmsg(){
+            document.getElementById("msg").innerHTML = "please enter the full name";
+        }
+    </script>
+</body>
+</html>

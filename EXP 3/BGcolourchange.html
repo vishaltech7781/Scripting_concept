@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body onclick="changeColor()">
+
+<h2>Click anywhere on the page</h2>
+<p>The background color will change.</p>
+
+<script>
+    function changeColor() {
+        document.body.style.backgroundColor = "rgb(" +
+            Math.floor(Math.random() * 256) + "," +
+            Math.floor(Math.random() * 256) + "," +
+            Math.floor(Math.random() * 256) + ")";
+    }
+</script>
+
+</body>
+</html>

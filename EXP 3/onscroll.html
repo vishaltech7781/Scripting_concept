@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Scroll down the page</p>
+
+<div style="height:1500px;">
+    Scroll content...
+</div>
+
+<p id="msg"></p>
+
+<script>
+    window.onscroll = function () {
+        document.getElementById("msg").innerHTML =
+            "You are scrolling down the page!";
+    };
+</script>
+
+</body>
+</html>

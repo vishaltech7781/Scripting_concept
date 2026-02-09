@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Resize the browser window</h3>
+<p id="size"></p>
+
+<script>
+    window.onresize = function () {
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+
+        document.getElementById("size").innerHTML =
+            "Window Width: " + width + " px<br>" +
+            "Window Height: " + height + " px";
+    };
+</script>
+
+</body>
+</html>

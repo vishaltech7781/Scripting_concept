@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button 
+    onmouseover="showMsg()" 
+    onmouseout="hideMsg()">
+    mouse over
+</button>
+
+<p id="msg"></p>
+
+<script>
+    function showMsg() {
+        document.getElementById("msg").innerHTML =
+            "Mouse is over the button";
+    }
+
+    function hideMsg() {
+        document.getElementById("msg").innerHTML = "";
+    }
+</script>
+
+</body>
+</html>
